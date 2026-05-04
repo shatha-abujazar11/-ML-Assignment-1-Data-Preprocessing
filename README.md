@@ -43,7 +43,8 @@ data/test.csv
 np.log1p(SalePrice)
 ```
 To reduce skewness and improve modeling
-5. Exploratory Data Analysis (EDA)
+### 5. Exploratory Data Analysis (EDA)
+
 Correlation analysis
 
 Heatmap visualization
@@ -52,27 +53,32 @@ Scatter plot (GrLivArea vs SalePrice)
 
 Neighborhood price analysis
 
-6. Feature Engineering
+### 6. Feature Engineering
+
 Created:
 TotalSF = TotalBsmtSF + 1stFlrSF + 2ndFlrSF
-7. Encoding
+### 7. Encoding
+
 Ordinal encoding for quality features
 
 One-hot encoding using pd.get_dummies()
 
-8. Data Alignment
+### 8. Data Alignment
+
 train_processed, test_processed = train_processed.align(
     test_processed,
     join='left',
     axis=1,
     fill_value=0
 )
-9. Preprocessing Function
+### 9. Preprocessing Function
+
 Built reusable function:
 preprocess_data(df)
 Applied on reloaded raw data
 
-Final Result
+### Final Result
+
 No missing values
 
 All features numeric
@@ -81,13 +87,12 @@ Log transformation applied
 
 Train and test aligned
 
-→ Dataset is ready for regression modeling
+#### → Dataset is ready for regression modeling
 
-How to Run
+### How to Run
 Put dataset in:
 data/train.csv
 data/test.csv
 Run notebook from top to bottom
-
-Author
-Shatna Abu Jazar
+### Author
+##### Shatha Abu Jazar
