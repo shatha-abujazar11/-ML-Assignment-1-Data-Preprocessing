@@ -41,6 +41,7 @@ data/test.csv
 - Applied:
 ```python
 np.log1p(SalePrice)
+```
 To reduce skewness and improve modeling
 5. Exploratory Data Analysis (EDA)
 Correlation analysis
